@@ -1,13 +1,6 @@
 # Condomínio - Reservas
-Projeto desenvolvido para a disciplina Programação Webe 1
-IFPB 2020.2
-### Descrição
-
-### Tasklist
-- [ ] Iniciar projeto Angular
-- [x] Criar protótipo
-- [ ] Separar atribuições
-- [ ] ...
+Projeto desenvolvido para a disciplina de Desenvolvimento e Execução de Projeto de Software
+IFPB
 
 #### Módulos
 
