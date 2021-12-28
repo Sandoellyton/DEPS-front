@@ -1,0 +1,47 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{area.name}}</mat-card-title>
+    </mat-card-header>
+      <img
+        class="card-image"
+        mat-card-image
+        src="{{area.image}}"
+        alt="{{area.name}}">
+
+    <mat-table [dataSource]="dataSource">
+        <div class="scroll">
+            <mat-header-row *matHeaderRowDef="mostrarColunas"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: mostrarColunas;"></mat-row>
+
+            <ng-container matColumnDef="id">
+                <mat-header-cell *matHeaderCellDef>ID</mat-header-cell>
+                <mat-cell *matCellDef="let item">{{item.id}}</mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="date">
+                <mat-header-cell *matHeaderCellDef>Data</mat-header-cell>
+                <mat-cell *matCellDef="let item">{{item.date}}</mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="apartment">
+                <mat-header-cell *matHeaderCellDef>Apartamento</mat-header-cell>
+                <mat-cell *matCellDef="let item">{{item.apartment}}</mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="reason">
+                <mat-header-cell *matHeaderCellDef>Motivo</mat-header-cell>
+                <mat-cell *matCellDef="let item">{{item.reason}}</mat-cell>
+            </ng-container>
+
+          <ng-container matColumnDef="actions">
+            <mat-header-cell *matHeaderCellDef>Ações</mat-header-cell>
+            <mat-cell *matCellDef="let item">
+              <button mat-icon-button>
+                <mat-icon (click)="removerReserva(item.id)">delete</mat-icon>
+              </button>
+            </mat-cell>
+          </ng-container>
+
+        </div>
+    </mat-table>
+</mat-card>

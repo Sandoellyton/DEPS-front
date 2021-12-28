@@ -1,0 +1,48 @@
+<app-menu></app-menu>
+<div class="main">
+  <div id="content" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+    <mat-card class="card" *ngFor="let area of areas" id="{{area.id}}">
+      <mat-card-header>
+        <mat-card-title>{{area.name}}</mat-card-title>
+      </mat-card-header>
+      <img
+        class="card-image"
+        mat-card-image
+        src="{{area.image}}"
+        alt="{{area.name}}">
+
+      <mat-card-content class="description">
+        <p>{{area.description}}</p>
+      </mat-card-content>
+
+      <mat-card-actions class="footer" fxLayoutAlign="space-around">
+        <button
+          mat-raised-button
+          color="primary"
+          matTooltip="Adicionar reserva"
+          (click)="openReserveDialog(area)"
+        >Reservar
+        </button>
+        <button
+          mat-raised-button
+          (click)="listReserves(this.area)"
+        >Listar</button>
+        <button
+          mat-mini-fab
+          *ngIf="this.isAdmin == 'admin'"
+          (click)="editeArea(this.area)"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button
+          mat-mini-fab
+          *ngIf="this.isAdmin == 'admin'"
+          (click)="removeArea(this.area.id)"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
+</div>

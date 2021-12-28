@@ -1,0 +1,46 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>{{area.name}}</mat-card-title>
+    </mat-card-header>
+    <img
+      class="card-image"
+      mat-card-image
+      src="{{area.image}}"
+      alt="{{area.name}}">
+    <mat-card-content fxLayout="column">
+      <mat-form-field appearance="fill">
+          <mat-label>Selecionar data</mat-label>
+          <input matInput [matDatepicker]="picker" [(ngModel)]="date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Apartamento</mat-label>
+        <input
+          #name="ngModel"
+          matInput [(ngModel)]="apartment"
+          placeholder="Nome da área"
+          type="number"
+        >
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Motivo</mat-label>
+        <input
+          #name="ngModel"
+          matInput [(ngModel)]="reason"
+          placeholder="Descrição breve"
+          type="text"
+        >
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="end">
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="createReserve()"
+      >Cadastrar
+      </button>
+    </mat-card-actions>
+</mat-card>
+

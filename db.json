@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Administrator",
+      "login": "admin",
+      "pass": "admin",
+      "apartment": 100,
+      "_adm": true
+    },
+    {
+      "id": 2,
+      "name": "Fulano",
+      "login": "fulano",
+      "pass": "123456",
+      "apartment": 101,
+      "_adm": false
+    }
+  ],
+  "areas": [
+    {
+      "id": 1,
+      "name": "Piscina",
+      "image": "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "description": "Mil estarão na piscina, dez mil na praia, mas tu estarás com as contas em dia."
+    },
+    {
+      "id": 2,
+      "name": "Churrasqueira",
+      "image": "https://images.unsplash.com/photo-1534797258760-1bd2cc95a5bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80",
+      "description": "Se for dirigir não beba, se for beber me chame"
+    },
+    {
+      "id": 3,
+      "name": "Salão de Festas",
+      "image": "https://images.unsplash.com/photo-1559424452-eeb3a13ffe2b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "description": "That's the way, uh-huh, uh-huh I like it, uh-huh, uh-huh"
+    },
+    {
+      "id": 4,
+      "name": "Academia",
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+      "description": "Que não vai dar o que? Aqui é bodybuilder! Biiiirl! Só mais uma série",
+      "reserves": []
+    },
+    {
+      "id": 5,
+      "name": "Cinema",
+      "image": "https://images.unsplash.com/photo-1485095329183-d0797cdc5676?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
+      "description": "Cineminha, pipoca só falta o contatinho",
+      "reserves": []
+    },
+    {
+      "id": 6,
+      "name": "Sauna",
+      "image": "https://images.unsplash.com/photo-1605614307370-f7a1e58ae751?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "description": "Eu sei que a primeira coisa que reparou foi a foto",
+      "reserves": []
+    },
+    {
+      "id": 7,
+      "name": "Gustavo Galisa",
+      "image": "https://avatars.githubusercontent.com/u/44270471?v=4",
+      "description": "Advogado",
+      "reserves": []
+    }
+  ],
+  "reserves": [
+    {
+      "id": 1,
+      "id_area": 1,
+      "date": "03-06-2021"
+    },
+    {
+      "id": 2,
+      "id_area": 2,
+      "date": "03-06-2021"
+    },
+    {
+      "id": 3,
+      "id_area": 2,
+      "date": "24-06-2021"
+    },
+    {
+      "id": 4,
+      "id_area": 6,
+      "date": "23-06-2021"
+    },
+    {
+      "id": 5,
+      "id_area": 4,
+      "date": "09-06-2021",
+      "apartment": 101,
+      "reason": "teste"
+    },
+    {
+      "id": 6,
+      "id_area": 1,
+      "date": "02-06-2021"
+    },
+    {
+      "id": 7,
+      "id_area": 5,
+      "date": "10-06-2021",
+      "apartment": 101,
+      "reason": "admin"
+    },
+    {
+      "id": 8,
+      "id_area": 7,
+      "date": "18-06-2021",
+      "apartment": 101,
+      "reason": "+546"
+    },
+    {
+      "id": 9,
+      "id_area": 2,
+      "date": "18-06-2021",
+      "apartment": 101,
+      "reason": "sim"
+    },
+    {
+      "id": 10,
+      "id_area": 6,
+      "date": "03-06-2021",
+      "apartment": 102,
+      "reason": "Sand tá animado"
+    }
+  ]
+}

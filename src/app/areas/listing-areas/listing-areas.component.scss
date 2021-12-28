@@ -1,0 +1,58 @@
+body {
+  height: 100vh;
+}
+
+.main {
+  background-color: lightgray;
+}
+
+#content {
+  padding: 1.5rem;
+}
+
+.card {
+  width: 250px;
+  height: 320px;
+  margin: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.card-image {
+  height: 150px;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.description {
+  text-align: center;
+  font-size: 16px;
+  overflow: auto;
+  height: 70px;
+}
+
+.mat-card-actions {
+  padding: 0;
+}
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+  background-color: #EEE;
+  border-left: 1px solid #CCC
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #BAC0C4
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: #717171
+}

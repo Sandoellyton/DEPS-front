@@ -1,0 +1,59 @@
+.card-title {
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+img {
+  width: 80px;
+}
+
+.card-login {
+  height: 350px;
+  width: 300px;
+  margin: auto;
+}
+
+#card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
+
+.footer {
+  width: 100%;
+}
+
+.login-btn {
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.login-btn:hover {
+  background-color: #2639a5;
+}

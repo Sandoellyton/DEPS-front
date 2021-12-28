@@ -1,0 +1,27 @@
+<div class="menu-background"
+     fxLayout="row"
+     fxLayoutAlign="space-between center"
+     yPosition="above"
+>
+  <button mat-button *ngIf = "this.is_adm == 'admin'" [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" color="primary">
+    <button
+      mat-menu-item
+      (click)="openUserDialog()"
+    >Cadastrar Usuário
+    </button>
+    <button
+      mat-menu-item
+      (click)="openDialog()"
+    >Cadastrar área
+    </button>
+    <button
+      mat-menu-item
+      [routerLink]="['/listing-areas']"
+    >Listar áreas
+    </button>
+  </mat-menu>
+  <button mat-button [routerLink]="['/']">Sair</button>
+</div>
